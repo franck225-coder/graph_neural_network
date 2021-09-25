@@ -1,6 +1,10 @@
 import torch
 from torch_geometric.data import Data
 
+###########################################################################################################
+# Creating Simple GNNs using PyG
+###########################################################################################################
+
 # edge_index: is a 2D array where the second dimension consists of 2
 # subarrays representing the Origin and Destination nodes
 # (eg. from node 1 to node 2, from node 0 to node 4, from node 0 to node 1, and from node 1 to node 3)
@@ -23,4 +27,7 @@ print(data.num_node_features)
 
 # If the graph contains any isolated nodes(true or flase)
 print(data.contains_isolated_nodes())
+
+
+
 
